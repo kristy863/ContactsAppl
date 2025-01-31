@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/indexx"
+    tools:context=".MainActivity">
+
+    <!--recycler view για την εμφάνιση των επαφών-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contactsRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        tools:listitem="@layout/contact_rv_item" />
+
+    <!--fab για προσθήκη νέας επαφής-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/add"
+        android:backgroundTint="#728FCE"
+        android:contentDescription="Enter The Phone Number"
+        android:hint="e.g 6977777777"
+        android:text="Add Contact"
+        app:tint="@color/white" />
+
+</RelativeLayout>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/indexx"
+    tools:context=".AddEditContactActivity">
+
+    <!--edit text για όνομα επαφής-->
+    <EditText
+        android:id="@+id/idEditContactName"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_above="@id/idBtn"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="571dp"
+        android:gravity="start|top"
+        android:hint="Enter Name"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="30sp" />
+
+
+    <!--edit text για επίθετο επαφής-->
+    <EditText
+        android:id="@+id/idEditContactSurname"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_above="@id/idBtn"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="509dp"
+        android:gravity="start|top"
+        android:hint="Enter Surname"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="30sp" />
+
+    <!--edit text για αριθμό τηλεφώνου επαφής-->
+    <EditText
+        android:id="@+id/idEditContactNumber"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_above="@id/idBtn"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="451dp"
+        android:gravity="start|top"
+        android:hint="Enter Phone Number"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="30sp" />
+
+    <!--edit text για email επαφής-->
+    <EditText
+        android:id="@+id/idEditContactEmail"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_above="@id/idBtn"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="395dp"
+        android:gravity="start|top"
+        android:hint="Enter Email"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="30sp" />
+
+    <!--κουμπί για αποθήκευση και ανανέωση επαφής-->
+    <Button
+        android:id="@+id/idBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="Save Contact"
+        android:textSize="30sp"
+        android:backgroundTint="#728FCE"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
